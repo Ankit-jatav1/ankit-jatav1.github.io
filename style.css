@@ -1,0 +1,299 @@
+*,
+*::before,
+*::after{
+   box-sizing:border-box;
+   margin: 0;
+   padding: 0;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+   background-color:rgb(32, 39, 51);
+}
+header{
+   width:100%;
+}
+header .nav-bar{
+   width:100%;
+   background-color:rgb(10, 12, 16);
+   display:flex;
+   justify-content: center;
+   
+}
+header .nav-list{
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   gap:45px;
+   min-height:50px;
+}
+.nav-list li{
+   list-style:none;
+}
+.nav-list a{
+   text-decoration:none;
+   color:rgb(68, 184, 178);
+   font-size:1.2rem;
+   font-weight:600;
+   text-shadow:2px 1px 3px rgb(90, 88, 88);
+}
+/* nav section done here */
+
+/* responisve design for big sreen */
+@media (min-width:740px){
+   header .nav-bar{
+      justify-content:end;
+   }
+   header .nav-list{
+      margin-right:20px;
+   }
+   .about-section .about-para{
+      width:60%;
+      margin:auto;
+   }
+   
+   .main{
+      width:90%;
+      margin:auto;
+   }
+   
+   .skills-card-gallery{
+      width:80%;
+      margin:auto;
+      border:2px solid;
+      display:flex;
+      flex-wrap:wrap;
+      align-items: flex-start;
+      gap:10px;
+      padding:15px;
+      border-radius:8px;
+      margin-bottom:10px;
+   }
+   main .skill-card{
+      width:200px;
+      background: #d9d9d9;
+      padding-left:20px;
+      border-radius: 10px;
+      flex: 1;
+      min-height:200px;
+   }
+   
+   /* project section styling */
+   .main .projects{
+      width:80%;
+      margin:auto;
+      border:2px solid;
+      border-radius:8px;
+      padding:12px;
+      margin-bottom:10px;
+   }
+   .main .project-container{
+      display:flex;
+      justify-content: start;
+      gap:10px;
+      justify-content:space-evenly;
+
+   }
+   .main .contact-input{
+      width:80%;
+      margin:auto;
+      border:2px solid;
+      border-radius:8px;
+      
+   }
+   .main .contact-form{
+      width:60%;
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+      align-items:center
+   }
+   .contact-form .form-button{
+      align-self: center;
+   }
+   
+}
+/* window responsive end here */
+
+
+
+/* main section start here*/
+main{
+   width:100%;
+   margin-top:5px;
+}
+main .about{
+   width:100%;
+   
+}
+.about-section h1{
+   text-align:center;
+   color:rgb(102, 252, 240);
+
+   font-size:1.6rem;
+   margin:10px 0px;
+   font-weight:700;
+}
+.about-section p{
+   color:rgb(196, 198, 200);
+   font-size:1.2em;
+   line-height:1.5;
+   text-align:center;
+   margin:10px 10px;
+}
+/* about section done here */
+
+/* Skills section start here*/
+
+main .skills{
+ width:100%;
+ margin-top:15px;
+}
+
+main h2{
+   color:rgb(102, 252, 240);
+   text-align:center;
+   font-size:1.7rem;
+   margin-bottom:15px;
+}
+.skills .skill-card{
+   width:90%;
+   margin:auto;
+   background-color:rgb(196, 198, 200);
+   border-radius:8px;
+   padding:13px;
+   margin-bottom:10px;
+   box-shadow:2px 2px 3px rgb(0, 0, 0);
+}
+.skills h3{
+   color:rgb(10, 12, 16);
+   font-size:1.5rem;
+}
+.skills ul{
+   margin:5px 50px;
+   font-size:1.2rem;
+   color:rgb(32, 39, 51);
+   font-weight:500;
+}
+/* skill section done here*/
+
+/* project section start here */
+main .projects{
+   width:100%; 
+}
+
+.projects .project-card{
+   width:90%;
+   margin:auto;
+   background-color:rgb(196, 198, 200);
+   border-radius:8px;
+   padding:13px;
+   margin-bottom:10px;
+   box-shadow:2px 2px 3px rgb(0, 0, 0);
+
+}
+.projects h4{
+   color:rgb(10, 12, 16);
+   font-size:1.5rem;
+   font-weight:700;
+   text-align:center;
+   margin-bottom:10px;
+
+}
+.projects p{
+   color:rgb(32, 39, 51);
+   text-align:left;
+   font-size:1.3rem;
+   margin:0px 10px;
+   margin-bottom:15px;
+}
+.projects button{
+   width:100px;
+   height:40px;
+   margin:0px 35%;
+   background-color:aquamarine;
+   border:none;
+   border-radius:10px;
+   font-size:1.4rem;
+   box-shadow:3px 3px  3px rgb(10, 12, 16);
+}
+.projects a{
+   color:rgb(32, 39, 51);
+   text-decoration:none;
+   margin:10px;
+
+}
+/*project section done here */
+
+/*form section start here */
+main .contact-form{
+   width:90%;
+   margin:auto;
+   background-color:rgb(196, 198, 200);
+   border-radius:8px;
+   padding:13px;
+   margin-bottom:10px;
+   box-shadow:2px 2px 3px rgb(0, 0, 0);
+   
+}
+.contact-form label{
+   width:100%;
+   height:50px;
+   font-size:1.5rem;
+   color:rgb(10, 12, 16);
+   margin:5px 5px;
+}
+.contact-form input{
+    width:100%;
+    height:50px;
+    text-align:left;
+    border-radius:8px;
+    font-size:1.2rem;
+    margin-bottom:10px;
+    padding:10px;
+   color:rgb(171, 171, 171);
+    
+}
+/* messege area */
+.contact-form #messege{
+   width:100%;
+   margin:auto;
+   height:100px;
+   border-radius:8px;
+   text-align:left;
+   padding:10px;
+   font-size:1.2rem;
+   color:rgb(51, 50, 50);
+   margin-bottom:10px;
+}
+/* submit button */
+.contact-form button{
+   width:100px;
+   height:40px;
+   margin:0px 35%;
+   border:none;
+   border-radius:10px;
+   font-size:1.4rem;
+   box-shadow:2px 2px  3px rgb(10, 12, 16);
+}
+/* form section done  */
+
+/* footer section start here */
+
+footer{
+   width:100%;
+   max-height:70px;
+   background-color:rgb(10, 12, 16);
+   font-size:1rem;
+   color:rgb(70, 162, 158);
+   text-align:center;
+   margin-top:20px;
+}
+footer a{
+   text-decoration:none;
+   color:rgb(41, 84, 82);
+   margin-bottom:0px;
+  
+}
+
+
+

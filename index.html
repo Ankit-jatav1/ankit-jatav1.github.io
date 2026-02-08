@@ -3,42 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon"  type="image/x-icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <title>Ankit Jatav | Portfolio</title>
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
       <nav class="nav-bar">
         <ul class="nav-list">
-          <li><a href="/index.html">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <!-- ABOUT SECTION -->
-      <section class="about-section">
+
+    <!-- MAIN -->
+    <main id="home">
+      <!-- ABOUT -->
+      <section class="about-section container">
         <h1>ANKIT JATAV</h1>
         <p class="about-para">
           I’m a Java developer focused on strengthening core programming
           fundamentals and data structures. Currently preparing for EPAM-style
           online assessments by practicing dry runs, problem solving, and clean
-          logic. I’m actively building small projects to apply concepts instead
-          of just memorizing theory.
+          logic. I build small projects to apply concepts instead of memorizing
+          theory.
         </p>
       </section>
 
-      <!-- SKILLS SECTION  -->
-      <section id="skills" class="skills">
+      <!-- SKILLS -->
+      <section id="skills" class="skills container">
         <h2>SKILLS</h2>
-        <!-- fronend skill card -->
+
         <div class="skills-card-gallery">
-          <div class="skill-card frontend-card">
-            <h3>FrontEnd :</h3>
-            <ul class="frontend-list">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
@@ -46,95 +50,79 @@
             </ul>
           </div>
 
-          <!-- back end skill card -->
-          <div class="skill-card backend-card">
-            <h3>Backend:</h3>
-            <ul class="backend-list">
-              <li>Java(core)</li>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Java (Core)</li>
               <li>SQL</li>
               <li>MongoDB</li>
               <li>DBMS</li>
             </ul>
           </div>
 
-          <!-- other skill card -->
-          <div class="skill-card other-card">
-            <h3>Other :</h3>
+          <div class="skill-card">
+            <h3>Other</h3>
             <ul>
-              <li>git/github</li>
+              <li>Git / GitHub</li>
               <li>IDEs</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- PROJECT SECTION -->
-      <section id="projects" class="projects">
+      <!-- PROJECTS -->
+      <section id="projects" class="projects container">
         <h2>PROJECTS</h2>
-        <!-- PROJECT-1 CARD -->
+
         <div class="project-container">
-          <div class="project-card project-1">
+          <div class="project-card">
             <h4>Snake Game (C++)</h4>
             <p>
-              A fully graphical Snake game built using C++, focusing on game
-              logic, movement, collision detection, and score tracking. This
-              project helped strengthen control flow, loops, and real-time logic
-              handling.
+              A fully graphical Snake game built using C++, focusing on movement,
+              collision detection, and score tracking.
             </p>
-            <button><a href="#project-1">View</a></button>
+            <a class="project-btn" href="#">View</a>
           </div>
-          <!-- PROJECT-2 CARD -->
-          <div class="project-card project-2">
+
+          <div class="project-card">
             <h4>DSA Practice & Logic Tracker (Java)</h4>
             <p>
-              A collection of Java programs covering arrays, strings, loops,
-              recursion, and common interview patterns. Built specifically to
-              fix off-by-one errors, loop condition mistakes, and weak mental
-              execution.
+              Java programs covering arrays, strings, loops, recursion, and
+              interview patterns to fix logical mistakes.
             </p>
-            <button><a href="#project-2">View</a></button>
+            <a class="project-btn" href="#">View</a>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="contact-input">
+      <!-- CONTACT -->
+      <section id="contact" class="contact-input container">
         <h2>Contact</h2>
-        <div class="contact-form">
-          <form action="#dummy-link" method="POST">
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="enter name"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="xyz@gmail.com"
-              required
-            />
 
-            <label for="messege"></label>
-            <textarea
-              id="messege"
-              placeholder="write messege here.."
-            ></textarea>
-            <button class="form-button" type="submit">Send</button>
+        <div class="contact-form">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@email.com" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message"></textarea>
+
+            <button type="submit">Send</button>
           </form>
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-      &copy; 2026 Ankit Jatav | Email:ankit.jatav0802@gmail.com
+      <p>&copy; 2026 Ankit Jatav</p>
       <div class="footer-links">
-        <a href="https://www.linkedin.com/in/ankit-jatav" target="_blank"
-          >Linkedin</a
-        >
-        <br />
-        <a href="https://github.com/Ankit-jatav1" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/ankit-jatav" target="_blank">LinkedIn</a>
+        |
+        <a href="https://github.com/Ankit-jatav1" target="_blank">GitHub</a>
       </div>
     </footer>
   </body>
